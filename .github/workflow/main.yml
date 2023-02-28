@@ -1,0 +1,26 @@
+name: Build and deploy packafe
+
+on:
+  push:
+    branches: -main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubunto-latest
+
+    steps:
+      - uses: actions/checkout@main
+
+      - name: Set up .Net Core
+        uses: actions/setup-dotnet@v2
+        With:
+          dotnet-version: "7.0.x"
+
+      - name: Build with dotnet
+        run: dotnet build --configuration Release
+
+      - name: Test
+        run: dotnet test
+
+      - name: create the package
+        run: dotnet pack --configuration Release

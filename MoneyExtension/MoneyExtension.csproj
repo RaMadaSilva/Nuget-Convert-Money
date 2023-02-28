@@ -4,6 +4,13 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PackageId>ExtensaoDinheiro</PackageId>
+    <Version>1.1.0</Version>
+    <Licence>MIT</Licence>
+    <Authors>Raul Mateia</Authors>
+    <RepositoryUrl>https://github.com/RaMadaSilva/Nuget-Convert-Money</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/RaMadaSilva/Nuget-Convert-Money</PackageProjectUrl>
+    <Title>Conversão de Moedas</Title>
   </PropertyGroup>
 
 </Project>
